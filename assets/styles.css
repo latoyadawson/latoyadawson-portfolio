@@ -1,0 +1,167 @@
+:root {
+    --primary-color:;
+    --secondary-color: ;
+    --tertiary-color: ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+}
+
+/* Header Styling Start */
+header{
+    padding: 20px 35px;
+    background-color: rgb(110, 107, 107);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; 
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+    margin: 0;
+    
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+} 
+
+header nav ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    
+
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.55vw;
+}
+  
+header nav ul li a:hover {
+    background: black;
+    color: white;
+    text-shadow: none;
+}
+/*Header Styling End */
+
+/* general section styling */
+section { 
+    padding: 50px;
+    margin: 10px;
+    flex: 1
+} 
+
+.section-title {    
+    font-size: 35px;
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+    width: 20%;
+    flex: 1;
+    margin: 10px
+}
+.div-section {
+    border-right: 3px solid;
+    height: 200px;
+    width: 20%;
+}
+    
+.body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:inherit;
+    height: 200px;
+    width: 80;
+}  
+/* Hero Styling */
+.hero h2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.blurp h2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+/* Hero Styling  end*/
+
+
+/* About Me Styling Start */
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* About Me Styling End */
+
+/* My Work Styling Start */
+.work {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* My Work Styling  End*/
+
+/* Contact Me Styling */
+.contact { 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.body ul{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-list li{
+    justify-content: space-evenly;
+    padding: 25px;
+    font-weight: lighter;
+    font-size: 2.00vw;
+
+}
+
+
+
+
+
+
+
+/* Media Queries for smaller desktop screns and smaller*/
+
+/* Media Queries for tablets and smaller*/
+
+/* Media Queries for mobile phones and smaller*/
