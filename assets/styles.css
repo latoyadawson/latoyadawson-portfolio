@@ -1,8 +1,3 @@
-:root {
-    --primary-color:;
-    --secondary-color: ;
-    --tertiary-color: ;
-}
 
 * {
     margin: 0;
@@ -17,25 +12,24 @@ body {
 /* Header Styling Start */
 header{
     padding: 20px 35px;
-    background-color: rgb(110, 107, 107);
+    background-color: lavender;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0; 
 }
 
 header h1{
     font-weight: bold;
     font-size: 36px;
-    color: white;
+    color: black;
     margin: 0;
     
 }
 
 header a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -69,7 +63,7 @@ header nav ul li a:hover {
 }
 /*Header Styling End */
 
-/* general section styling */
+/* general section styling  start*/
 section { 
     padding: 50px;
     margin: 10px;
@@ -80,36 +74,46 @@ section {
     font-size: 35px;
     padding: 40px;
     display: flex;
-    justify-content: flex-start;
     width: 20%;
     flex: 1;
-    margin: 10px
+    margin: 5px
 }
 .div-section {
-    border-right: 3px solid;
     height: 200px;
-    width: 20%;
 }
     
 .body {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    flex-direction: row;
+    /*align-content: center;*/
     padding:inherit;
-    height: 200px;
-    width: 80;
-}  
+    border-left: 3px solid;
+} 
+/* general section styling  end*/
+
+
 /* Hero Styling */
-.hero h2 {
+
+.hero {
+    background-image: url(./images/black\ pattern.jpg);
+    background-size: cover;
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+    margin: 0;
+    padding: 0;
 }
-.blurp h2 {
-    display: flex;
-    justify-content: flex-end;
+
+.img img{
+    padding: 10px;
+    margin: 10px;
     flex-wrap: wrap;
-    align-items: baseline;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 /* Hero Styling  end*/
 
@@ -119,9 +123,6 @@ section {
     display: flex;
     justify-content: space-between;
 }
-
-
-
 /* About Me Styling End */
 
 /* My Work Styling Start */
@@ -129,31 +130,102 @@ section {
     display: flex;
     justify-content: space-around;
 }
+.gallery div {
+    padding: 10px;
+}
+.runbuddy {
+    position: relative;
+}
+.runbuddy-text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    color: #f1f1f1;
+    width: 25%;
+    padding: 20px;
+    text-align: flex-start;
+    
+}
+.runbuddy:hover .runbuddy-text {
+    opacity: 1;
+}
 
+h3 p {
+    background: black;
+    color: white;
+}
+.runbuddy img {
+    height: 50%;
+    width: 100%;
+    opacity: 1;
+    /*display: block;*/
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: black 3px solid;
+}
+
+.runbuddy:hover  {
+    opacity: 0.3;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row ;
+}
+
+.column {
+    position: relative;
+    align-content: flex-start;
+}
+
+.column-text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    color: #f1f1f1;
+    width: 25%;
+    padding: 20px;
+    text-align: flex-start;
+    font-size: small;
+    
+}
+
+.column .tile {
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: black 3px solid;
+}
+
+.column:hover {
+    opacity: 0.3;
+}
 /* My Work Styling  End*/
 
 /* Contact Me Styling */
 .contact { 
     display: flex;
-    justify-content: space-evenly;
+}
+
+.contact .body {
+    width: 100%
 }
 
 .body ul{
     list-style: none;
     align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .contact-list li{
-    justify-content: space-evenly;
     padding: 25px;
     font-weight: lighter;
-    font-size: 2.00vw;
-
+    font-size: 1.600vw;
 }
 
+/* Contact Me Styling End */
 
 
 
@@ -161,7 +233,35 @@ section {
 
 
 /* Media Queries for smaller desktop screns and smaller*/
-
+@media screen and (max-width: 980px) {
+  
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .row {
+        flex-wrap: wrap;
+    }
+}
 /* Media Queries for tablets and smaller*/
+@media screen and (max-width: 768px){
+
+}
 
 /* Media Queries for mobile phones and smaller*/
+@media screen and (max-width: 575px){
+
+}
