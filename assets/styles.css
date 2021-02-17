@@ -74,12 +74,13 @@ section {
     font-size: 35px;
     padding: 40px;
     display: flex;
-    width: 20%;
+    /*width: 20%;*/
     flex: 1;
     margin: 5px
 }
 .div-section {
     height: 200px;
+    width: 180px;
 }
     
 .body {
@@ -109,6 +110,7 @@ section {
 .img img{
     padding: 10px;
     margin: 10px;
+    padding-left: 100px;
     flex-wrap: wrap;
     display: flex;
     justify-content: flex-start;
@@ -237,7 +239,7 @@ h3 p {
 
 
 
-/* Media Queries for smaller desktop screns and smaller*/
+/* Media Queries for smaller desktop screens and smaller */
 @media screen and (max-width: 980px) {
   
     header {
