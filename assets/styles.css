@@ -85,9 +85,8 @@ section {
 .body {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: center;*/
+    justify-content: center;
     flex-direction: row;
-    /*align-content: center;*/
     padding:inherit;
     border-left: 3px solid;
 } 
@@ -207,22 +206,28 @@ h3 p {
 /* Contact Me Styling */
 .contact { 
     display: flex;
+    margin: 0
 }
 
+/*
 .contact .body {
-    width: 100%
+    width: 100%;
+    padding: 10px;
 }
+*/
 
 .body ul{
     list-style: none;
     align-items: center;
     display: flex;
+    
 }
 
+
 .contact-list li{
-    padding: 25px;
+    padding: 50px;
     font-weight: lighter;
-    font-size: 1.600vw;
+    font-size: 1.400vw;
 }
 
 /* Contact Me Styling End */
@@ -263,5 +268,11 @@ h3 p {
 
 /* Media Queries for mobile phones and smaller*/
 @media screen and (max-width: 575px){
+    .contact-list {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
 
 }
