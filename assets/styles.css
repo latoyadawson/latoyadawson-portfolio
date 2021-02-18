@@ -1,0 +1,280 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lavender;
+}
+
+/* Header Styling Start */
+header{
+    padding: 20px 35px;
+    background-color: lavender;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 0; 
+}
+
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
+    margin: 0;
+    
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header nav ul {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+} 
+
+header nav ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    
+
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 2.55vw;
+}
+  
+header nav ul li a:hover {
+    background: black;
+    color: white;
+    text-shadow: none;
+}
+/*Header Styling End */
+
+/* general section styling  start*/
+section { 
+    padding: 50px;
+    margin: 10px;
+    flex: 1
+} 
+
+.section-title {    
+    font-size: 35px;
+    padding: 40px;
+    display: flex;
+    /*width: 20%;*/
+    flex: 1;
+    margin: 5px
+}
+.div-section {
+    height: 200px;
+    width: 180px;
+}
+    
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding:inherit;
+    border-left: 3px solid;
+} 
+/* general section styling  end*/
+
+
+/* Hero Styling */
+
+.hero {
+    background-image: url(./images/black\ pattern.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    background-position: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+.img img{
+    padding: 10px;
+    margin: 10px;
+    padding-left: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* Hero Styling  end*/
+
+
+/* About Me Styling Start */
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+/* About Me Styling End */
+
+/* My Work Styling Start */
+.work {
+    display: flex;
+    justify-content: space-around;
+}
+.gallery div {
+    padding: 10px;
+}
+.runbuddy {
+    position: relative;
+}
+.runbuddy-text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    color: #f1f1f1;
+    width: 25%;
+    padding: 20px;
+    text-align: flex-start;
+    
+}
+.runbuddy:hover .runbuddy-text {
+    opacity: 1;
+}
+
+h3 p {
+    background: black;
+    color: white;
+}
+.runbuddy img {
+    height: 50%;
+    width: 100%;
+    opacity: 1;
+    /*display: block;*/
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: black 3px solid;
+}
+
+.runbuddy:hover  {
+    opacity: 0.3;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-direction: row ;
+}
+
+.column {
+    position: relative;
+    align-content: flex-start;
+}
+
+.column-text {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    color: #f1f1f1;
+    width: 25%;
+    padding: 20px;
+    text-align: flex-start;
+    font-size: small;
+    
+}
+
+.column .tile {
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: black 3px solid;
+}
+
+.column:hover {
+    opacity: 0.3;
+}
+/* My Work Styling  End*/
+
+/* Contact Me Styling */
+.contact { 
+    display: flex;
+    margin: 0
+}
+
+/*
+.contact .body {
+    width: 100%;
+    padding: 10px;
+}
+*/
+
+.body ul{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    
+}
+
+
+.contact-list li{
+    padding: 50px;
+    font-weight: lighter;
+    font-size: 1.400vw;
+}
+
+/* Contact Me Styling End */
+
+
+
+
+
+
+/* Media Queries for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+  
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+    
+    .row {
+        flex-wrap: wrap;
+    }
+}
+/* Media Queries for tablets and smaller*/
+@media screen and (max-width: 768px){
+
+}
+
+/* Media Queries for mobile phones and smaller*/
+@media screen and (max-width: 575px){
+    .contact-list {
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+}
