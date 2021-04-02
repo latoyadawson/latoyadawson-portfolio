@@ -134,10 +134,10 @@ section {
 .gallery div {
     padding: 10px;
 }
-.runbuddy {
+.main-project {
     position: relative;
 }
-.runbuddy-text {
+.main-project-text {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
@@ -147,7 +147,7 @@ section {
     text-align: flex-start;
     
 }
-.runbuddy:hover .runbuddy-text {
+.main-project:hover .main-project-text {
     opacity: 1;
 }
 
@@ -155,7 +155,7 @@ h3 p {
     background: black;
     color: white;
 }
-.runbuddy img {
+.main-project img {
     height: 50%;
     width: 100%;
     opacity: 1;
@@ -165,7 +165,7 @@ h3 p {
     border: black 3px solid;
 }
 
-.runbuddy:hover  {
+.main-project:hover  {
     opacity: 0.3;
 }
 
